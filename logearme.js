@@ -4,11 +4,13 @@ document.addEventListener('DOMContentLoaded', () => {
     loginForm.addEventListener('submit', async (e) => {
         e.preventDefault();
 
+        // @ts-ignore
         const email = document.getElementById('email').value;
+        // @ts-ignore
         const password = document.getElementById('password').value;
 
         try {
-            const response = await fetch('http://localhost:1337/api/auth/local', {
+            const response = await fetch('https://0159-190-62-3-5.ngrok-free.app/api/auth/local', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
