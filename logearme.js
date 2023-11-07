@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (response.ok) {
                 const data = await response.json();
-                // Almacena el token de autenticación en localStorage.
+                // Almacena el token de autenticación en localStoragee.
                 localStorage.setItem('token', data.jwt);
 
                 // Redirige al usuario a una página ficticia de inicio.
